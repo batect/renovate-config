@@ -21,4 +21,4 @@
       "lookupNameTemplate": "alpine_3_12/{{depName}}"
     }
   ]
-  
+}
