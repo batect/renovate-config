@@ -1,0 +1,9 @@
+*                text=auto
+
+*.editorconfig   text       eol=lf
+*.json           text       eol=lf
+Dockerfile       text       eol=lf
+LICENSE          text       eol=lf
+
+*.gitignore      text=auto
+*.gitattributes  text=auto
