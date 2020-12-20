@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone",
+    "github>batect/renovate-config:apk"
+  ],
+  "reviewers": [
+    "charleskorn"
+  ],
+  "labels": ["is:dependency-update"],
+  "rebaseWhen": "behind-base-branch"
+}
