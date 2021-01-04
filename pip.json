@@ -1,0 +1,11 @@
+{
+  "regexManagers": [
+    {
+      "fileMatch": ["(^|/)Dockerfile$"],
+      "matchStrings": [
+        "(?:RUN pip install \\s+|\\\\\\s+)(?<depName>[a-zA-Z0-9-]+)(=|==)(?<currentValue>[a-zA-Z0-9-._]+)"
+      ],
+      "datasourceTemplate": "pypi"
+    }
+  ]
+}
