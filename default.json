@@ -10,5 +10,6 @@
     "charleskorn"
   ],
   "labels": ["is:dependency-update"],
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "digest": { "enabled": "false" }
 }
