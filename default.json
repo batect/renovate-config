@@ -1,6 +1,7 @@
 {
   "extends": [
     "config:base",
+    "docker:enableMajor",
     ":prHourlyLimitNone",
     ":prConcurrentLimitNone",
     "github>batect/renovate-config:apk",
@@ -11,10 +12,5 @@
   ],
   "labels": ["is:dependency-update"],
   "rebaseWhen": "behind-base-branch",
-  "digest": { "enabled": "false" },
-  "docker": {
-    "major": {
-      "enabled": true
-    }
-  }
+  "digest": { "enabled": "false" }
 }
