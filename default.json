@@ -5,6 +5,7 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimitNone",
     "github>batect/renovate-config:apk",
+    "github>batect/renovate-config:docker",
     "github>batect/renovate-config:pip"
   ],
   "reviewers": [

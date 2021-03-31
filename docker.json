@@ -1,0 +1,9 @@
+{
+  "packageRules": [
+    {
+      "matchManagers": ["docker"],
+      "stabilityDays": 1,
+      "prCreation": "not-pending"
+    }
+  ]
+}
