@@ -3,11 +3,13 @@
     {
       "fileMatch": ["(^|/)Dockerfile$"],
       "matchStrings": [
-        "(?:RUN apk (?:add --no-cache|--no-cache add)\\s+|\\\\\\s+)(?<depName>[a-zA-Z0-9-]+)(=|==)(?<currentValue>[a-zA-Z0-9-._]+)"
+        "apk (?:add --no-cache|--no-cache add)\\s+(?:-[a-z-]+|\\\\|\\s|[a-zA-Z0-9-]+(?:=|==)[a-zA-Z0-9-._]+)*",
+        "(?<depName>[a-zA-Z0-9-]+)(=|==)(?<currentValue>[a-zA-Z0-9-._]+)"
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
-      "lookupNameTemplate": "alpine_3_14/{{depName}}"
+      "lookupNameTemplate": "alpine_3_14/{{depName}}",
+      "matchStringsStrategy": "recursive"
     }
   ]
 }

@@ -3,11 +3,13 @@
     {
       "fileMatch": ["(^|/)Dockerfile$"],
       "matchStrings": [
-        "(?:apt-get install(?:\\s+-[a-z-]*)*\\s+|\\\\\\s+)(?<depName>[a-zA-Z0-9-]+)=(?<currentValue>[a-zA-Z0-9-._]+)"
+        "apt-get install\\s+(?:-[a-z-]+|\\\\|\\s|[a-zA-Z0-9-]+=[a-zA-Z0-9-._:+~]+)*",
+        "(?<depName>[a-zA-Z0-9-]+)=(?<currentValue>[a-zA-Z0-9-._:+~]+)"
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
-      "lookupNameTemplate": "ubuntu_20_04/{{depName}}"
+      "lookupNameTemplate": "ubuntu_20_04/{{depName}}",
+      "matchStringsStrategy": "recursive"
     }
   ]
 }
