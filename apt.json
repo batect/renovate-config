@@ -11,5 +11,12 @@
       "lookupNameTemplate": "ubuntu_20_04/{{depName}}",
       "matchStringsStrategy": "recursive"
     }
+  ],
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["openjdk-11-"],
+      "matchDatasources": ["repology"],
+      "allowedVersions": "/^11\\./"
+    }
   ]
 }
