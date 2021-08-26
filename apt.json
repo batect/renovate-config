@@ -17,6 +17,11 @@
       "matchPackagePrefixes": ["openjdk-11-"],
       "matchDatasources": ["repology"],
       "allowedVersions": "/^11\\./"
+    },
+    {
+      "matchPackageNames": ["gcc"],
+      "matchDatasources": ["repology"],
+      "enabled": false
     }
   ]
 }
