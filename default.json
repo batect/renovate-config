@@ -8,6 +8,7 @@
     "github>batect/renovate-config:apk",
     "github>batect/renovate-config:apt",
     "github>batect/renovate-config:docker",
+    "github>batect/renovate-config:golang",
     "github>batect/renovate-config:pip"
   ],
   "reviewers": [
