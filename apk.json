@@ -3,7 +3,7 @@
     {
       "fileMatch": ["(^|/)Dockerfile$"],
       "matchStrings": [
-        "apk (?:add --no-cache|--no-cache add)\\s+(?:-[a-z-]+|\\\\|\\s|[a-zA-Z0-9-]+(?:=|==)[a-zA-Z0-9-._]+)*",
+        "apk (?:add --no-cache|--no-cache add)\\s+(?:-[a-z-]+|\\\\|\\s|[a-zA-Z0-9-]+(?:=|==)[a-zA-Z0-9-._]+|#.*)*",
         "(?<depName>[a-zA-Z0-9-]+)(=|==)(?<currentValue>[a-zA-Z0-9-._]+)"
       ],
       "versioningTemplate": "loose",
