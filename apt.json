@@ -8,7 +8,7 @@
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
-      "lookupNameTemplate": "ubuntu_20_04/{{depName}}",
+      "lookupNameTemplate": "ubuntu_22_04/{{depName}}",
       "matchStringsStrategy": "recursive"
     }
   ],
