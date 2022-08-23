@@ -2,7 +2,19 @@
   "extends": [
     "github>batect/renovate-config:default",
     ":semanticCommits",
-    ":semanticCommitTypeAll(deps)"
+    ":semanticCommitTypeAll(deps)",
+    ":semanticCommitScopeDisabled"
+  ],
+  "packageRules": [
+    {
+      "matchPaths": [
+        ".github/workflows/**/*",
+        "batect",
+        "batect.cmd",
+        "batect.yml"
+      ],
+      "semanticCommitScope": "internal"
+    }
   ],
   "automerge": true
 }
