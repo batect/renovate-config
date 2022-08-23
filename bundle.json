@@ -8,10 +8,10 @@
   "packageRules": [
     {
       "matchPaths": [
-        ".github/workflows/**/*",
-        "batect",
-        "batect.cmd",
-        "batect.yml"
+        "+(.github/workflows/**/*)",
+        "+(batect)",
+        "+(batect.cmd)",
+        "+(batect.yml)"
       ],
       "semanticCommitScope": "internal"
     }
