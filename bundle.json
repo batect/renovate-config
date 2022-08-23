@@ -1,6 +1,8 @@
 {
   "extends": [
-    "github>batect/renovate-config:default"
+    "github>batect/renovate-config:default",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(deps)"
   ],
   "automerge": true
 }
