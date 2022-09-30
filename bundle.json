@@ -9,7 +9,7 @@
     {
       "matchPaths": [
         "+(.github/workflows/**/*)",
-        "+(.github/workflows/*)",
+        "+(.github/workflows/*.yml)",
         "+(batect)",
         "+(batect.cmd)",
         "+(batect.yml)"
