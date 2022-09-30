@@ -15,6 +15,12 @@
         "+(batect.yml)"
       ],
       "semanticCommitScope": "internal"
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "semanticCommitScope": "internal"
     }
   ],
   "automerge": true
