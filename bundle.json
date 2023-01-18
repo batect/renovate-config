@@ -8,8 +8,8 @@
   "packageRules": [
     {
       "matchPaths": [
-        "+(.github/workflows/**/*)",
-        "+(.github/workflows/*.yml)",
+        ".github/workflows/**/*",
+        ".github/workflows/*.yml",
         "+(batect)",
         "+(batect.cmd)",
         "+(batect.yml)"
