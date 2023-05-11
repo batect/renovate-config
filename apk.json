@@ -8,7 +8,7 @@
       ],
       "versioningTemplate": "loose",
       "datasourceTemplate": "repology",
-      "lookupNameTemplate": "alpine_3_17/{{depName}}",
+      "lookupNameTemplate": "alpine_3_18/{{depName}}",
       "matchStringsStrategy": "recursive"
     }
   ]
